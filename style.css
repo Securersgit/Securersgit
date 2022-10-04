@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;1,9..144,200;1,9..144,400;1,9..144,800&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+}
+
+.container {
+    overflow: hidden;
+    /* margin-top: 20%;
+    margin-left: 10%; */
+    margin: 100px auto;
+    width: 500px;
+    height: 350px;
+    display: flex;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.container .info {
+    padding: 20px 20px 20px 40px;
+    height: 100%;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.container .display {
+    width: 250px;
+    height: 100%;
+}
+
+.container .display2 {
+    display: none;
+}
+
+.perf {
+    padding-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 4px;
+    font-size: 7px;
+}
+
+.name {
+    font-family: 'Fraunces', sans-serif;
+    font-size: 25px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+}
+
+.abt {
+    font-size: 10px;
+    padding-top: 10px;
+    padding-right: 30px;
+    line-height: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.price {
+    font-family: 'Fraunces', sans-serif;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color: rgb(74, 165, 74);
+}
+.price small {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 10px;
+    color: black;
+}
+
+.cart-btn {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(6, 52, 6);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.attribution {
+    padding-top: 20px;
+}
+
+
+
+
+@media only screen and (max-width: 376px) {
+
+    .container {
+        overflow: hidden;
+        /* margin-top: 20%;
+        margin-left: 10%; */
+        margin: 20px;
+        width: 350px;
+        height: 650px;
+        display: inline-block;
+        border-radius: 10px;
+        background-color: white;
+    }
+
+    .container .display {
+        display: none;
+    }
+    .container .display2 {
+        display: flex;
+        width: 100%;
+        height: auto;
+    }
+
+    .container .info {
+        padding: 20px 20px 0px 20px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .perf {
+        font-size: 12px;
+    }
+
+    .name {
+        font-size: 35px;
+        padding: 0px 0px 5px 0px;
+    }
+
+    .abt {
+        font-size: 14px;
+        padding: 10px 30px 0px 0px;
+        line-height: 20px;
+        font-weight: 700;
+    }
+
+    .price {
+        padding: 20px 0px 20px 0px;
+        font-size: 25px;
+        color: rgb(60, 133, 65);
+    }
+
+    .cart-btn {
+        margin: auto;
+        background-color: rgb(60, 133, 65);
+        font-weight: 700;
+        font-size: 15px;
+    }
+
+}
